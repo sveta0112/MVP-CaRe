@@ -1,31 +1,14 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+const mongoose = require('mongoose');
 
-var db = mongoose.connection;
+const mongoURI = 'mongodb://localhost:27017/nanny';
 
-db.on('error', function() {
-  console.log('mongoose connection error');
-});
+const db = mongoose.connect(mongoURI, { useNewUrlParser: true });
 
-db.once('open', function() {
-  console.log('mongoose connected successfully');
-});
-
-var itemSchema = mongoose.Schema({
-  quantity: Number,
-  description: String
-});
-
-var Item = mongoose.model('Item', itemSchema);
-
-var selectAll = function(callback) {
-  Item.find({}, function(err, items) {
-    if(err) {
-      callback(err, null);
-    } else {
-      callback(null, items);
-    }
+db
+  .then(db => console.log(`Connected to: ${mongoURI}`))
+  .catch(err => {
+    console.log(`There was a problem connecting to mongo at: ${mongoURI}`)
+    console.log(err);
   });
-};
 
-module.exports.selectAll = selectAll;
+module.exports = db;
