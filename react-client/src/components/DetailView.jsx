@@ -39,8 +39,9 @@ class DetailView extends React.Component {
         </h1>
 
         <div className="post-byline">
-          <p>{this.props.desc.details}</p>
           <img src={this.props.desc.imageURL} className="post-image" />
+          <p>{this.props.desc.details}</p>
+          
         </div>
         <button
           onClick={() => this.props.nannyClick(this.props.desc, "confirm")}

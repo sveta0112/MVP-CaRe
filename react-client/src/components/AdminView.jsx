@@ -35,6 +35,7 @@ class AdminView extends React.Component {
                 <th>Email</th>
                 <th>Message</th>
                 
+                
               </tr>
             </thead>
             <tbody>
@@ -42,7 +43,8 @@ class AdminView extends React.Component {
                 <CustomerDetails
                   key={customer._id}
                   details={customer}
-                  
+                  view={this.props.view}
+                  nannyClick={this.props.nannyClick}
                 />
               ))}
             </tbody>

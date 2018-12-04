@@ -51,9 +51,6 @@ exports.getSearch = (req, res) => {
 };
   
  
-
-
-
 exports.addNanny = (req, res) => {
   Nanny.create(req.body).then(result => {
     res.send(result);

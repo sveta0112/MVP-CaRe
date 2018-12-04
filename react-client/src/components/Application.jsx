@@ -36,6 +36,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
+        <h3>Please fill out the form:</h3>
         <form>
           First Name:
           <input type="text" id="firstName" onChange={this.handleChange} />
@@ -74,7 +75,7 @@ class Application extends React.Component {
           <input type="text" id="details" onChange={this.handleChange} />
           Posted:
           <input type="text" id="createdAt" onChange={this.handleChange} />
-          <br />
+          <br /><br/><br/>
           <button onClick={this.submitAttendee}>Apply</button>
         </form>
       </div>

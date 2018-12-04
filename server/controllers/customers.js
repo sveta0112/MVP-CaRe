@@ -20,5 +20,12 @@ exports.add = (req, res) => {
 }
 
 
+exports.removeCustomer = (req, res) => {
+  console.log('delete', req.params.id);
+  Customer.findByIdAndDelete({_id:req.params.id}).then(removed => {
+    res.send(removed);
+  });
+}
+
 
  

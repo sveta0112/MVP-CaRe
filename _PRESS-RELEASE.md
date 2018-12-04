@@ -17,13 +17,13 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  > CarE.com
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  > Heplpfull tool for busy parents.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  > Help busy parents to find nanny for different types of baby-sitting, including full time, part time, ocassional sitters and all sitters and nannies.
 
 ## Problem ##
   > Describe the problem your product solves.
@@ -35,7 +35,9 @@ Once the project moves into development, the press release can be used as a touc
   > A quote from a spokesperson in your company.
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  > npm run seed (seed data into db)
+    npm run react-dev (webpack)
+    npm run server-dev (nodemon)
 
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.

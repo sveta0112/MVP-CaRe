@@ -40,7 +40,7 @@ class Confirmation extends React.Component {
   render() {
     return (
       <div>
-        <h1>Customer Information</h1>
+        <h3>Customer Information</h3>
         <form>
           First Name:
           <input type="text" id="firstName" onChange={this.handleChange} />
@@ -58,7 +58,7 @@ class Confirmation extends React.Component {
           Message:
           <input type="text" id="message" onChange={this.handleChange} />
 
-          <br />
+          <br/><br/><br/>
           <button onClick={this.submitAttendee}>Send</button>
         </form>
       </div>

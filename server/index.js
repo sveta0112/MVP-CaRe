@@ -21,6 +21,7 @@ app.post("/nannies", nannies.addNanny);
 
 app.get("/customers", customers.getAll);
 app.post("/customers", customers.add);
+app.delete("/customers/:id", customers.removeCustomer);
 
 
 

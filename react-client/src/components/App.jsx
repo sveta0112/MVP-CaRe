@@ -130,6 +130,7 @@ import Application from "./Application.jsx";
 import AdminView from './AdminView.jsx';
 import Sent from "./Sent.jsx";
 import Result from "./Result.jsx";
+import Answer from './Answer.jsx';
 import $ from "jquery";
 
 class App extends React.Component {
@@ -227,7 +228,7 @@ class App extends React.Component {
         />
       );
     } else if (view === "admin"){
-      return <AdminView/>
+      return <AdminView  view={this.state.view} nannyClick={this.nannyHandler}/>
     } else if(view === "applyConfirmation"){
       return (
         <Result
@@ -235,6 +236,11 @@ class App extends React.Component {
           resultClick={this.nannyHandler}
         />
       );
+    } else if (view === "reply"){
+      <Answer
+        view={this.state.view}
+
+      />
     }
   }
   render() {
@@ -257,7 +263,7 @@ class App extends React.Component {
                 </li>
 
                 <li>
-                  <a onClick={() => this.changeView("admin")}>Admin</a>
+                  <a onClick={() => this.changeView("admin")}>Customer</a>
                 </li>
 
               </ul>
@@ -270,7 +276,7 @@ class App extends React.Component {
           </section>
           <footer>
             <div className="line" />
-            <p>Copyright 2019 - CarE.com</p>
+            <p>Copyright 2018 - CarE.com</p>
           </footer>
         </section>
       </div>
