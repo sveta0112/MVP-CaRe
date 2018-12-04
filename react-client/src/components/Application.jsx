@@ -9,7 +9,7 @@ class Application extends React.Component {
       firstName: "",
       lastName: "",
       email: "",
-      location:"",
+      location:"Search all Bay Area",
       hourlyRate:"$12.50",
       sitterType:"All sitters and nannies",
       details: "",
@@ -44,7 +44,16 @@ class Application extends React.Component {
           Email:
           <input type="text" id="email" onChange={this.handleChange} />
           Location:
-          <input type="text" id="location" onChange={this.handleChange} />
+          <select id="location" onChange={this.handleChange}>
+            <option value="All">Search all Bay Area</option>
+            <option value="San Francisco">San Francisco</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Oakland">Oakland</option>
+            <option value="Burlingame">Burlingame</option>
+            <option value="Daly City">Daly City</option>
+            <option value="Livermore">Livermore</option>
+          </select><br/><br/><br/>
+          
           Rate:
           <select id="hourlyRate" onChange={this.handleChange}>
             <option value="$12.50">$12.50</option>
