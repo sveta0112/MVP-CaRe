@@ -26,8 +26,10 @@ class Application extends React.Component {
     });
   }
 
-  submitAttendee() {
+  submitAttendee(e) {
+    e.preventDefault();
     axios.post("/nannies", this.state);
+    this.props.nannyHandler(this.props.desc, 'applyConfirmation')
   }
 
   render() {
@@ -38,8 +40,6 @@ class Application extends React.Component {
           <input type="text" id="firstName" onChange={this.handleChange} />
           Last Name:
           <input type="text" id="lastName" onChange={this.handleChange} />
-          Age:
-          <input type="text" id="age" onChange={this.handleChange} />
           Email:
           <input type="text" id="email" onChange={this.handleChange} />
           Location:

@@ -23,6 +23,7 @@ class Confirmation extends React.Component {
   }
 
   submitAttendee() {
+    
     // $.ajax({
     //   method: "POST",
     //   url: "/customers",

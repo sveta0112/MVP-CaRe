@@ -24,6 +24,7 @@ for (let i = 1; i < 101; i += 1) {
   //}
   data.firstName = faker.name.firstName();
   data.lastName = faker.name.lastName();
+  data.imageURL = faker.internet.avatar();
   data.email = faker.internet.email();
   data.location = locations[Math.floor(Math.random() * locations.length)];
   

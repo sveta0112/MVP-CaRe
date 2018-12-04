@@ -7,6 +7,7 @@ const nannySchema = new mongoose.Schema({
   //nanny_id: Number,
   firstName: String,
   lastName: String,
+  imageURL: String,
   email: String,
   location: String,
   hourlyRate: String,
