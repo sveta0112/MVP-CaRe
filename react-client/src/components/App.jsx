@@ -143,7 +143,7 @@ class App extends React.Component {
     this.getNanny = this.getNanny.bind(this);
     this.searchNanny = this.searchNanny.bind(this);
     this.nannyHandler = this.nannyHandler.bind(this);
-    this.addAplication = this.addAplication.bind(this);
+    
   }
 
   getNanny() {
@@ -186,16 +186,14 @@ class App extends React.Component {
     });
   }
 
-  addAplication(application){
-     
-  }
+  
 
   renderView() {
     const { view } = this.state;
     if (view === "default") {
       return (
         <div>
-          <SearchNanny handleSearch={this.searchNanny} />
+          <SearchNanny handleSearch={this.searchNanny} view={this.changeView} />
           {/* <NannyList info={this.state.data} handleClick={this.nannyHandler} /> */}
         </div>
       );
@@ -245,7 +243,7 @@ class App extends React.Component {
         <section id="page">
           <header>
             <hgroup>
-              <h1>CarE Locator</h1>
+              <h1>CarE.com</h1>
               <h3>With us, it’s easy!</h3>
             </hgroup>
 

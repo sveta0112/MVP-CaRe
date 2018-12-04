@@ -159,16 +159,17 @@ class SearchNanny extends React.Component {
           <p>
             Are you wondering if you made the right decision? One of the key
             elements is to trust your gut instinct. If you had a great
-            interview, received outstanding references from her former employers
+            interview, received outstanding references from applicant's former employers
             and had a great trial run, then you probably made the right
-            decision. Also, don’t forget to make sure the nanny has a clear
-            national criminal and sex offender background check as well as
+            decision. Also, don’t forget to make sure the care giver has a clear
+            national criminal background check as well as
             current CPR and First Aid certification.
           </p>
           <p>
-            It's easy to find what you need! Or if you want to Apply, please{" "}
-            <a onClick={() => this.changeView("find")}>click on the link.</a>We
-            are always for you. Thank you for visiting our website.
+            It's easy to find what you need!
+            If you want to Apply, please{" "}
+            go to our Apply tag at navigation bar.
+            Thank you for visiting our website.
           </p>
         </div>
       </article>

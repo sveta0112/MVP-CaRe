@@ -10,7 +10,7 @@ class Application extends React.Component {
       lastName: "",
       email: "",
       location:"",
-      hourlyRate:"",
+      hourlyRate:"$12.50",
       sitterType:"All sitters and nannies",
       details: "",
       createdAt: ""
@@ -29,7 +29,8 @@ class Application extends React.Component {
   submitAttendee(e) {
     e.preventDefault();
     axios.post("/nannies", this.state);
-    this.props.nannyHandler(this.props.desc, 'applyConfirmation')
+    this.props.nannyClick(this.props.desc, 'applyConfirmation')
+    
   }
 
   render() {
@@ -45,7 +46,14 @@ class Application extends React.Component {
           Location:
           <input type="text" id="location" onChange={this.handleChange} />
           Rate:
-          <input type="text" id="hourlyRate" onChange={this.handleChange} />
+          <select id="hourlyRate" onChange={this.handleChange}>
+            <option value="$12.50">$12.50</option>
+            <option value="$15.00">$15.00</option>
+            <option value="$20.00">$20.00</option>
+            <option value="$25.00">$25.00</option>
+            <option value="$32.50">$32.50</option>
+          </select><br/><br/><br/>
+
           Type:
           <select id="sitterType" onChange={this.handleChange}>
             <option value="All">All sitters and nannies</option>

@@ -50,7 +50,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f7f7f7;
+  background-color: #FFB6C1;
   color: #0a2463;
 }
 
@@ -401,7 +401,7 @@ p {
 
 article .line {
   /* The dividing line inside of the article is darker: */
-  background-color: #15242a;
+  background-color: #F08080;
   border-bottom-color: #204656;
   margin: 1.3em 0;
 }
@@ -471,7 +471,7 @@ figure {
 /* Article styles: */
 
 #page {
-  width: 960px;
+  width: 860px;
   margin: 0 auto;
   position: relative;
 }

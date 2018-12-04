@@ -51,7 +51,7 @@ class NannyList extends React.Component {
   render() {
     return (
       <article id="article2">
-        <h2>Click on the list for more information!</h2>
+        <h2>Click on the View applicant for more information!</h2>
         <div className="line" />
         <div>
           <table id="ListTable">
