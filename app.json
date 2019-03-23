@@ -1,7 +1,7 @@
  {
     "name": "Node.js Nanny",
     "description": "Care Giver Application using Express and React",
-    "repository": "https://github.com/sveta0112/mvp-starter.gi",
+    "repository": "https://github.com/sveta0112/mvp-starter.git",
     "keywords": ["node", "express", "static"],
     //"image": "heroku/nodejs"
 
