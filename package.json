@@ -9,7 +9,7 @@
   },
   "scripts": {
     "react-dev": "webpack -d --watch",
-    "start": "nodemon server/index.js",
+    "start": "node server/index.js",
     "seed": "node ./database-mongo/models/seed.js"
   },
   "author": "Beth Johnson",
