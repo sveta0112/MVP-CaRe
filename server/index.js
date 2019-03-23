@@ -6,6 +6,8 @@ const customers = require('./controllers/customers.js');
 // var items = require('../database-mysql');
 // var items = require('../database-mongo');
 
+const PORT = process.env.PORT || '3000';
+
 var app = express();
 app.use(bodyParser.json());
 // UNCOMMENT FOR REACT
@@ -25,6 +27,6 @@ app.delete("/customers/:id", customers.removeCustomer);
 
 
 
-app.listen(3000, function() {
+app.listen(PORT, function() {
   console.log('listening on port 3000!');
 });

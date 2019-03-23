@@ -150,7 +150,8 @@ class App extends React.Component {
   getNanny() {
     $.ajax({
       method: "GET",
-      url: "/nannies",
+      //url: "/nannies",
+      url: "https://nanny-demo.herokuapp.com/nannies",
       success: data => {
         this.setState({
           data: data
