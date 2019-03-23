@@ -166,7 +166,7 @@ class App extends React.Component {
   searchNanny(location, type) {
     $.ajax({
       method: "GET",
-      url: "/nannies/" + location + "/" + type,
+      url: "https://nanny-demo.herokuapp.com/nannies/" + location + "/" + type,
       success: data => {
         this.setState({
           data: data,
