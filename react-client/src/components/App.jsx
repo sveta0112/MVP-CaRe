@@ -151,7 +151,7 @@ class App extends React.Component {
     $.ajax({
       method: "GET",
       //url: "/nannies",
-      url: "https://nanny-demo.herokuapp.com/nannies",
+      url: "/nannies",
       success: data => {
         this.setState({
           data: data
@@ -166,7 +166,7 @@ class App extends React.Component {
   searchNanny(location, type) {
     $.ajax({
       method: "GET",
-      url: "https://nanny-demo.herokuapp.com/nannies/" + location + "/" + type,
+      url: "/nannies/" + location + "/" + type,
       success: data => {
         this.setState({
           data: data,

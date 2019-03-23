@@ -1,5 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
+const cors = require("cors");
 const nannies = require('./controllers/nannies.js');
 const customers = require('./controllers/customers.js');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
@@ -9,6 +10,7 @@ const customers = require('./controllers/customers.js');
 const PORT = process.env.PORT || '3000';
 
 var app = express();
+app.use(cors());
 app.use(bodyParser.json());
 // UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../react-client/dist'));
