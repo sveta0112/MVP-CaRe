@@ -28,7 +28,7 @@ class Application extends React.Component {
 
   submitAttendee(e) {
     e.preventDefault();
-    axios.post("/nannies", this.state);
+    axios.post("https://nanny-demo.herokuapp.com/nannies", this.state);
     this.props.nannyClick(this.props.desc, 'applyConfirmation')
     
   }

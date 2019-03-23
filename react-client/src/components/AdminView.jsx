@@ -13,7 +13,7 @@ class AdminView extends React.Component {
   componentDidMount(){
     $.ajax({
     	method: 'GET',
-    	url: '/customers',
+    	url: 'https://nanny-demo.herokuapp.com/customers',
     	success: (data) => {
     	  this.setState({
     	  	customerList: data

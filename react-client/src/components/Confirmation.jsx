@@ -33,7 +33,7 @@ class Confirmation extends React.Component {
     //     console.log(data);
     //   }
     // });
-    axios.post("/customers", this.state);
+    axios.post("https://nanny-demo.herokuapp.com/customers", this.state);
     this.props.nannyClick(this.props.desc, 'sent')
   }
 
