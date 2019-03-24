@@ -93,7 +93,7 @@ class SearchNanny extends React.Component {
             <div className="inner-container">
               <div className="centered-content">
                 <table
-                  align="left"
+                  style={{textAlign:"left"}}
                   cellAdding="5"
                   cellSpacing="10"
                   width="400px"
