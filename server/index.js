@@ -3,6 +3,7 @@ var bodyParser = require('body-parser');
 const cors = require("cors");
 const nannies = require('./controllers/nannies.js');
 const customers = require('./controllers/customers.js');
+const Nanny = require('../../database-mongo/models/nanny.js');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 // var items = require('../database-mysql');
 // var items = require('../database-mongo');
@@ -19,7 +20,17 @@ app.use(express.static(__dirname + '/../react-client/dist'));
 // app.use(express.static(__dirname + '/../angular-client'));
 // app.use(express.static(__dirname + '/../node_modules'));
 
-app.get("/nannies", nannies.getAll);
+app.get("/nannies", (req, res) => {
+  Nanny.find({}, (err, results) =>{
+  	if(err){
+  		res.json(0);
+  	}else{
+  		res.json(results);
+  	}
+  });
+});
+
+
 app.get("/nannies/:location/:sitterType", nannies.getSearch);
 app.post("/nannies", nannies.addNanny);
 
