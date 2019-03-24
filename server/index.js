@@ -8,11 +8,15 @@ const Nanny = require('../database-mongo/models/nanny.js');
 // var items = require('../database-mysql');
 // var items = require('../database-mongo');
 
-const PORT = process.env.PORT || '3000';
+
 
 var app = express();
+const PORT = process.env.PORT || '3000';
+
+
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 // UNCOMMENT FOR REACT
 app.use(express.static(__dirname + '/../react-client/dist'));
 
