@@ -1,9 +1,9 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 const cors = require("cors");
-const nannies = require('./controllers/nannies.js');
-const customers = require('./controllers/customers.js');
-const Nanny = require('../../database-mongo/models/nanny.js');
+//const nannies = require('./controllers/nannies.js');
+//const customers = require('./controllers/customers.js');
+const Nanny = require('../database-mongo/models/nanny.js');
 // UNCOMMENT THE DATABASE YOU'D LIKE TO USE
 // var items = require('../database-mysql');
 // var items = require('../database-mongo');
@@ -31,12 +31,12 @@ app.get("/nannies", (req, res) => {
 });
 
 
-app.get("/nannies/:location/:sitterType", nannies.getSearch);
-app.post("/nannies", nannies.addNanny);
+// app.get("/nannies/:location/:sitterType", nannies.getSearch);
+// app.post("/nannies", nannies.addNanny);
 
-app.get("/customers", customers.getAll);
-app.post("/customers", customers.add);
-app.delete("/customers/:id", customers.removeCustomer);
+// app.get("/customers", customers.getAll);
+// app.post("/customers", customers.add);
+// app.delete("/customers/:id", customers.removeCustomer);
 
 
 
