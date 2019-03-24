@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 //const mongoURI = 'mongodb://localhost:27017/nanny';
 
 
-const mongoURI = process.env.MONGODB_URI || 'mongodb://lana:lana1234@ds019866.mlab.com:19866/nanny'
+const mongoURI = process.env.MONGODB_URI || 'mongodb://lana:lana1234@ds153495.mlab.com:53495/heroku_p3nm4xw1'
 
 
 const db = mongoose.connect(mongoURI, { useNewUrlParser: true });
