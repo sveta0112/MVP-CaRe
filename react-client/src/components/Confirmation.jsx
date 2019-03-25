@@ -3,7 +3,7 @@ import $ from 'jquery';
 import axios from 'axios';
 
 
-
+//
 class Confirmation extends React.Component {
   constructor(props) {
     super(props);
