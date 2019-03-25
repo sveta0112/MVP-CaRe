@@ -16,6 +16,7 @@ class CustomerDetails extends React.Component {
           <td>{this.props.details.firstName}</td>
           <td>{this.props.details.lastName}</td>
           <td>{this.props.details.email}</td>
+          <td>{this.props.details.time}</td>
           <td>{this.props.details.message}</td>
          
            

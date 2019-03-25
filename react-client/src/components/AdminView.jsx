@@ -33,6 +33,7 @@ class AdminView extends React.Component {
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>When help is needed</th>
                 <th>Message</th>
                 
                 
