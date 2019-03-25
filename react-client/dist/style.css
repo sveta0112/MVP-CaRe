@@ -301,7 +301,8 @@ input:focus {
   padding-top: 10px;
   padding-bottom: 12px;
   text-align: left;
-  background-color: #4caf50;
+ /* background-color: #4caf50;*/
+  background-color: #AF3B6E;
   color: white;
 }
 .post {
@@ -450,7 +451,8 @@ input:focus {
 
 button{
     color: white;
-    background-color: Navy;
+    /*background-color: Navy;*/
+    background-color: #AF3B6E;
     font-size: 14px;
     margin: 0px;
     font-family: serif;
