@@ -39,9 +39,9 @@ class Application extends React.Component {
       fields["firstName"] = "";
       fields["lastName"] = "";
       fields["email"] = "";
-      fields["location"] = "Search all Bay Area";
-      fields["hourlyRate"] = "$12.50";
-      fields["sitterType"] = "All sitters and nannies";
+      fields["location"] = "";
+      fields["hourlyRate"] = "";
+      fields["sitterType"] = "";
       fields["details"] = "";
       fields["createdAt"] = "";
       axios.post("https://nanny-demo.herokuapp.com/nannies", this.state.fields);
@@ -131,6 +131,7 @@ class Application extends React.Component {
 
              <label>Location:</label>
              <select id="location" onChange={this.handleChange}>
+                <option value="Search through">Search through</option>
                 <option value="All">Search all Bay Area</option>
                 <option value="San Francisco">San Francisco</option>
                 <option value="San Jose">San Jose</option>
@@ -142,6 +143,7 @@ class Application extends React.Component {
 
              <label>Rate:</label>
              <select id="hourlyRate" onChange={this.handleChange}>
+                <option value="$">Choose rate</option>
                 <option value="$12.50">$12.50</option>
                 <option value="$15.00">$15.00</option>
                 <option value="$20.00">$20.00</option>
@@ -152,6 +154,7 @@ class Application extends React.Component {
 
              <label>Type:</label>
              <select id="sitterType" onChange={this.handleChange}>
+                <option value="Which Type">Choose Type</option>
                 <option value="All">All sitters and nannies</option>
                 <option value="Occasional Sitters">Occasional Sitters</option>
                 <option value="Full time sitters">Full time sitters</option>

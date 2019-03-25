@@ -139,6 +139,7 @@ class Confirmation extends React.Component {
 
             <label>When do you need help?</label>
             <select id="time" onChange={this.handleChange}>
+             <option value="Choose time">Choose time</option>
               <option value="Today">Today</option>
               <option value="Within few days">Within few days</option>
               <option value="Within two weeks">Within two weeks</option>
