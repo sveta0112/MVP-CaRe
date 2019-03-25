@@ -125,11 +125,11 @@ class Confirmation extends React.Component {
         <br/>
           <h3>Customer Information</h3>
           <form  onSubmit={this.submitAttendee}>
-            <label>Name:</label>
+            <label>First Name:</label>
             <input type="text" id="firstName" onChange={this.handleChange}/>
             <div className="errorMsg">{this.state.errors.firstName}</div>
 
-            <label>Lastname:</label>
+            <label>Last Name:</label>
             <input type="text" id="lastName" onChange={this.handleChange}/>
             <div className="errorMsg">{this.state.errors.lastName}</div>
 
