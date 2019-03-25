@@ -1,5 +1,5 @@
 # MVP-caregiver
-### Developed and implemented full stack Care Provider finder application to capture all business process to find provider in local area 
+### Full stack Care Provider finder application to capture all business process to find provider in local area 
 See demo at https://nanny-demo.herokuapp.com
 
 
