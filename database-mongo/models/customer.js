@@ -8,6 +8,7 @@ const customerSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   email: String,
+  time: String,
   message: String,
   
 });

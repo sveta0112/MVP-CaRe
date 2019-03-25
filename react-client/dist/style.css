@@ -9,11 +9,14 @@ figure {
   display: block;
 }
 
+
+
 body {
   /* Setting the default text color, size, page background and a font stack: */
   font-size: 0.825em;
   color: #fcfcfc;
-  background-color: #355664;
+  background-color: #FFA69E;
+  /*background-color: #355664;*/
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -91,7 +94,7 @@ footer .line {
 }
 
 nav {
-  //background: url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+  /*//background: url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;*/
   padding: 0 5px;
   position: absolute;
   right: 0;
@@ -157,7 +160,8 @@ figure {
 }
 
 article {
-  background-color: #213e4a;
+  background-color:#FF7E6B;
+ /* background-color: #213e4a;*/
   margin: 3em 0;
   padding: 20px;
 
@@ -218,6 +222,7 @@ footer a.by {
 footer a.up {
   float: right;
 }
+
 
 .inner-container {
   vertical-align: middle;
@@ -457,3 +462,70 @@ button{
     background-color: white;
    color: darkblue;
 }*/
+
+
+
+/*kk*/
+
+#register, #login {
+  width: 300px;
+  height: 450px;
+  border: 1px solid #d6d7da;
+  padding: 0px 15px 15px 15px;
+  border-radius: 5px;
+  font-family: arial;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 100px auto;
+
+}
+#register2, #login {
+  width: 400px;
+  height: 600px;
+  border: 1px solid #d6d7da;
+  padding: 0px 15px 15px 15px;
+  border-radius: 5px;
+  font-family: arial;
+  line-height: 16px;
+  color: #333333;
+  font-size: 14px;
+  background: #ffffff;
+  margin: 100px auto;
+}
+
+
+textarea.apply{
+  width: 360px;
+ 
+}
+form label, form input {
+  display: block;
+  //margin-bottom: 10px;
+  width: 90%
+}
+
+form input {
+  padding: 10px;
+  border: solid 1px #BDC7D8;
+
+}
+
+.button {
+  background-color: #00BFFF;
+  border-color: #3ac162;
+  font-weight: bold;
+  padding: 12px 15px;
+  color: #ffffff;
+}
+
+.errorMsg {
+  color: #cc0000;
+  margin-bottom: 12px;
+}
+
+.sucessMsg {
+  color: #6B8E23;
+  margin-bottom: 10px;
+}
