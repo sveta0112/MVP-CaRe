@@ -8,8 +8,11 @@ class Confirmation extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      fields: {},
+      fields: {
+        nanny_id: this.props.desc._id//capturing nanny_id, while filling out curomer form
+      },
       errors: {},
+     
       // firstName: "",
       // lastName: "",
       // email: "",
@@ -34,6 +37,7 @@ class Confirmation extends React.Component {
 
  
   submitAttendee(e) {
+
     e.preventDefault();
     if(this.validateForm()){
       let fields = {};
@@ -42,8 +46,10 @@ class Confirmation extends React.Component {
       fields["email"] = "";
       fields["time"] = "";
       fields["message"] = "";
+      
       this.setState({fields: fields});
       //alert("Form submitted");
+
       axios.post("/customers", this.state.fields);
       this.props.nannyClick(this.props.desc, 'sent')
     }

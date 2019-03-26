@@ -1,5 +1,5 @@
 const Customer = require('../../database-mongo/models/customer.js');
-
+const CustomerNanny = require('../../database-mongo/models/custNanny.js');
 
 exports.getAll = (req, res) => {
   Customer.find({}, (err, result) => {
@@ -13,9 +13,16 @@ exports.getAll = (req, res) => {
 
 exports.add = (req, res) => {
   
-  console.log('body', req.body.firstName);
+  console.log('nannyCustomer', req.body.nanny_id);
+  //creates customer collection
   Customer.create(req.body).then(result => {
-    res.send(result);
+    var myObj = {nanny_id: req.body.nanny_id, customer_id: result._id};
+    //creates customer-nanny collection, afet customer collection created
+    CustomerNanny.create(myObj).then(result2 => {
+      res.send(result2);
+    })
+    //res.send(result._id);
+    
   })
 }
 
