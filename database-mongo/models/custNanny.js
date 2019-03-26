@@ -9,7 +9,7 @@ const customerNannySchema = new mongoose.Schema({
   date: { type: Date, default: Date.now }
 });
 
-//in order to run new collection, ctrl + C exit from server, and run npm start again
+//in order to run new collection, ctrl + C exit from server, and run npm start again.
 
 
 const CustomerNanny = mongoose.model('CustomerNanny', customerNannySchema);
